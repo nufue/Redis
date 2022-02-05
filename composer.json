@@ -1,9 +1,7 @@
 {
-	"name": "kdyby/redis",
+	"name": "nufue/redis",
 	"type": "library",
-	"description": "Redis storage for Nette Framework",
-	"keywords": ["nette", "kdyby", "redis", "client", "cache"],
-	"homepage": "http://kdyby.org",
+	"description": "Redis storage for Nette Framework (based on kdyby/redis)",
 	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"authors": [
 		{
@@ -12,20 +10,13 @@
 			"email": "filip@prochazka.su"
 		}
 	],
-	"support": {
-		"email": "filip@prochazka.su",
-		"issues": "https://github.com/kdyby/redis/issues"
-	},
 	"require": {
-		"php": ">=7.4",
+		"php": ">=8.0",
 		"ext-redis": "*",
 		"nette/di": "~3.0",
 		"nette/caching": "~3.0",
 		"nette/http": "~3.0",
 		"nette/utils": "~3.0"
-	},
-	"suggest": {
-		"ext-redis": "The php redis extension https://github.com/nicolasff/phpredis/ is required for connecting to redis server"
 	},
 	"require-dev": {
 		"nette/bootstrap": "~3.0",
@@ -49,10 +40,5 @@
 		}
 	},
 	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"extra": {
-		"branch-alias": {
-			"dev-master": "5.0-dev"
-		}
-	}
+	"prefer-stable": true
 }
